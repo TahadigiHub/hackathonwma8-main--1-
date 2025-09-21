@@ -6,8 +6,7 @@ import { createPost } from '../../utils/api';
 interface CreatePostProps {
   onPostCreated?: () => void;
 }
-
-const CreatePost: React.FC<CreatePostProps> = ({ onPostCreated }) => {
+Sconst CreatePost: React.FC<CreatePostProps> = ({ onPostCreated }) => {
   const { user } = useAuth();
   const [content, setContent] = useState('');
   const [imageUrl, setImageUrl] = useState('');
